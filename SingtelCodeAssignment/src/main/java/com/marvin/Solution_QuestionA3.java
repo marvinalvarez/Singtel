@@ -4,7 +4,7 @@ import com.marvin.animals.Animal;
 import com.marvin.animals.birds.Rooster;
 import com.marvin.constants.ActionEnum;
 
-public class Solution_Question3 {
+public class Solution_QuestionA3 {
 
 	public static void main(String args[]) {
 		

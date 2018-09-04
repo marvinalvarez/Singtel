@@ -5,7 +5,7 @@ import com.marvin.animals.birds.Chicken;
 import com.marvin.animals.birds.Duck;
 import com.marvin.constants.ActionEnum;
 
-public class Solution_Question2 {
+public class Solution_QuestionA2 {
 
 	public static void main(String args[]) {
 		// Question 2

@@ -1,16 +1,16 @@
 package com.marvin;
 
 import com.marvin.animals.Animal;
-import com.marvin.animals.birds.Bird;
+import com.marvin.animals.fish.Fish;
 import com.marvin.constants.ActionEnum;
 
-public class Solution_Question1 {
+public class Solution_QuestionB1 {
 
 	public static void main(String args[]) {
 		
-		// Question 1
+		// Question B1
 		{
-			Animal animal = new Bird();
+			Animal animal = new Fish();
 			animal.doAction(ActionEnum.WALK);
 			animal.doAction(ActionEnum.FLY);
 			animal.doAction(ActionEnum.SING);
