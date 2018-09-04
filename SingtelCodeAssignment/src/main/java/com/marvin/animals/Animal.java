@@ -6,10 +6,12 @@ import java.util.Map;
 import com.marvin.actions.ActionsInterf;
 import com.marvin.actions.NoAction;
 import com.marvin.constants.ActionEnum;
+import com.marvin.constants.attributes.AttributeEnum;
 
 public class Animal {
 
 	private Map<ActionEnum, ActionsInterf> mapActions = new HashMap<ActionEnum, ActionsInterf>();
+	private Map<AttributeEnum, String> mapAttributes = new HashMap<AttributeEnum, String>();
 
 	public Animal() {
 		System.out.println("-----");
@@ -44,5 +46,15 @@ public class Animal {
 	public String doAction(ActionEnum actionEnum) {
 		ActionsInterf action = this.getAction(actionEnum);
 		return action.doAction();
+	}
+
+	public void addAttribute(AttributeEnum attributeEnum, String attribute) {
+		this.mapAttributes.put(attributeEnum, attribute);
+	}
+
+	public String getAttribute(AttributeEnum attributeEnum) {
+		String attribute = this.mapAttributes.get(attributeEnum);
+		System.out.println("Animal is " + attribute + ".");
+		return attribute;
 	}
 }
