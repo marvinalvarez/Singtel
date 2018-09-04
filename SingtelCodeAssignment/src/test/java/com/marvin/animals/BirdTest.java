@@ -1,12 +1,13 @@
 package com.marvin.animals;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import com.marvin.animals.birds.Bird;
+import com.marvin.constants.ActionEnum;
 
 public class BirdTest {
 
@@ -28,8 +29,8 @@ public class BirdTest {
 
 	@Test
 	public void test() {
-		Bird bird = new Bird();
-		bird.sing();
+		Animal animal = new Bird();
+		animal.doAction(ActionEnum.SING);
 	}
 
 }
