@@ -17,4 +17,3 @@ public class Dolphin extends Animal {
 		super.addAttribute(AttributeEnum.SIZE, SizeEnum.LARGE.getSize());
 	}
 }
-
